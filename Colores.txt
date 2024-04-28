@@ -1,0 +1,32 @@
+Color Dorado.----------------------------.  
+Hexadecimal:
+#c6a43d
+#ddbc4f
+
+RGB:
+rgb(198, 164, 61)
+rgb(221, 188, 79)
+
+HSL Value:
+hsl(45,55%,51%)
+hsl(46,68%,59%)
+
+Gris.----------------------------.  
+Hexadecimal:
+#bbb9ae
+
+RGB:
+rgb(187, 185, 174)
+
+HSL Value:
+hsl(51,9%,71%)
+
+Negro.----------------------------.  
+Hexadecimal:
+#010101
+
+RGB:
+rgb(1, 1, 1)
+
+HSL Value:
+hsl(0,0%,0%)
