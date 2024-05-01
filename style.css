@@ -50,84 +50,83 @@
   }
 
   /** Header **/
+/** Header **/
 
-  .header-landing {
-    background-color: #bbb9ae; /* Cambia el color del navbar */
-    font-size: 1.2rem; /* Cambia el tamaño de las letras del encabezado */
-    font-weight: bold; /* Hace que las letras del menú estén en negrita */
-  }
+.header-landing {
+  background-color: #bbb9ae;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
 
-  .logo-header {
-    width: 10rem; /* Redimensiona el logo en base a la anchura deseada */
-    height: auto; /* Permite que la altura se ajuste automáticamente */
-  }
+.logo-header {
+  width: 10rem;
+  height: auto;
+}
 
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem; /* Agrega un espacio alrededor del contenido del navbar */
-  }
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.menu-header-section {
+  display: flex; /* Añade flexbox */
+  justify-content: space-between; /* Distribuye los elementos uniformemente en el espacio disponible */
+}
+.menu-option {
+  transition: transform 0.3s; /* Agrega una transición suave al cambio de tamaño */
+  margin: 0 2em; /* Agrega margen a los lados */
 
-  .wrap-menu-header-section ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
+}
+.menu-option a:hover {
+  color: #fdd72d; /* Cambia el color del texto a amarillo cuando pases el ratón por encima */
+}
+.menu-option a {
+  color: rgb(11, 11, 11);
+  text-decoration: underline;
+  transition: 0.3s;
+}
 
-  .wrap-menu-header-section ul li {
-    display: inline-block;
-    margin-right: 20px;
-  }
+.menu-option:hover {
+  transform: scale(1.2); /* Aumenta el tamaño del texto al pasar el ratón por encima */
+}
 
-  .wrap-menu-header-section ul li a {
-    color: rgb(11, 11, 11); /* Cambia el color del texto del menú a blanco */
-    text-decoration: none; /* Quita el subrayado del enlace */
-    transition: color 0.3s; /* Añade una transición suave al cambio de color */
-  }
+.menu-hamburguer {
+  display: none;
+}
 
-  .wrap-menu-header-section ul li a:hover {
-    color: #fdd72d; /* Cambia el color del texto del menú a amarillo cuando pases el ratón por encima */
+.menu-hamburguer .line {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .wrap-menu-header-section {
+    display: none;
   }
 
   .menu-hamburguer {
-    display: none; /* Por defecto, el menú hamburguesa está oculto */
+    display: block;
+    cursor: pointer;
   }
 
-  /* Estilos para el menú hamburguesa */
-  .menu-hamburguer .line {
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 5px 0;
+  .menu-hamburguer.open .line:nth-child(1),
+  .menu-hamburguer.open .line:nth-child(3) {
+    opacity: 0;
   }
 
-  @media (max-width: 768px) {
-    .wrap-menu-header-section {
-      display: none; /* Oculta el menú normal en pantallas pequeñas */
-    }
-
-    .menu-hamburguer {
-      display: block; /* Muestra el menú hamburguesa en pantallas pequeñas */
-      cursor: pointer;
-    }
-
-    /* Estilos para mostrar el menú hamburguesa */
-    .menu-hamburguer.open .line:nth-child(1),
-    .menu-hamburguer.open .line:nth-child(3) {
-      opacity: 0;
-    }
-
-    .menu-hamburguer.open .line:nth-child(2) {
-      transform: rotate(45deg);
-      top: 11px;
-    }
-
-    .menu-hamburguer.open .line:nth-child(3) {
-      transform: rotate(-45deg);
-      top: -11px;
-    }
+  .menu-hamburguer.open .line:nth-child(2) {
+    transform: rotate(45deg);
+    top: 11px;
   }
+
+  .menu-hamburguer.open .line:nth-child(3) {
+    transform: rotate(-45deg);
+    top: -11px;
+  }
+}
 
   /** Hero Section **/
 
