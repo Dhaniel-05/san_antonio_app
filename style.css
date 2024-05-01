@@ -81,7 +81,7 @@
   }
 
   .wrap-menu-header-section ul li a {
-    color: white; /* Cambia el color del texto del menú a blanco */
+    color: rgb(11, 11, 11); /* Cambia el color del texto del menú a blanco */
     text-decoration: none; /* Quita el subrayado del enlace */
     transition: color 0.3s; /* Añade una transición suave al cambio de color */
   }
