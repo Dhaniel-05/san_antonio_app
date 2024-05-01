@@ -1,0 +1,297 @@
+:root {
+    --main-c: #fdd72d;
+    --border-r:.2rem;
+  }
+
+  /** Estilos Generales **/
+
+  html * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  ul,
+  li {
+    list-style: none;
+  }
+
+  .wrap-cta {
+    padding: 1.5rem 0;
+  }
+
+  .cta-a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: var(--main-c);
+    padding: .5rem 1rem;
+    border-radius: var(--border-r);
+  }
+
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+  }
+
+  /** Header **/
+
+  .header-landing {
+    background-color: #bbb9ae; /* Cambia el color del navbar */
+    font-size: 1.2rem; /* Cambia el tamaño de las letras del encabezado */
+    font-weight: bold; /* Hace que las letras del menú estén en negrita */
+  }
+
+  .logo-header {
+    width: 10rem; /* Redimensiona el logo en base a la anchura deseada */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem; /* Agrega un espacio alrededor del contenido del navbar */
+  }
+
+  .wrap-menu-header-section ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .wrap-menu-header-section ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  .wrap-menu-header-section ul li a {
+    color: white; /* Cambia el color del texto del menú a blanco */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    transition: color 0.3s; /* Añade una transición suave al cambio de color */
+  }
+
+  .wrap-menu-header-section ul li a:hover {
+    color: #fdd72d; /* Cambia el color del texto del menú a amarillo cuando pases el ratón por encima */
+  }
+
+  .menu-hamburguer {
+    display: none; /* Por defecto, el menú hamburguesa está oculto */
+  }
+
+  /* Estilos para el menú hamburguesa */
+  .menu-hamburguer .line {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+  }
+
+  @media (max-width: 768px) {
+    .wrap-menu-header-section {
+      display: none; /* Oculta el menú normal en pantallas pequeñas */
+    }
+
+    .menu-hamburguer {
+      display: block; /* Muestra el menú hamburguesa en pantallas pequeñas */
+      cursor: pointer;
+    }
+
+    /* Estilos para mostrar el menú hamburguesa */
+    .menu-hamburguer.open .line:nth-child(1),
+    .menu-hamburguer.open .line:nth-child(3) {
+      opacity: 0;
+    }
+
+    .menu-hamburguer.open .line:nth-child(2) {
+      transform: rotate(45deg);
+      top: 11px;
+    }
+
+    .menu-hamburguer.open .line:nth-child(3) {
+      transform: rotate(-45deg);
+      top: -11px;
+    }
+  }
+
+  /** Hero Section **/
+
+  .hero-section {
+    height: 90vh;
+    background: url(img/img-hero-agencia.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #1e1e1e;
+    background-blend-mode: multiply;
+    display: flex;
+    align-items: center;
+  }
+
+  .wrap-hero-section {
+    max-width: 600px;
+    color: #fff;
+    padding: 15%;
+  }
+
+  /** Logo Brand Section **/
+  .secetion {
+    margin: 5rem 0;
+  }
+
+  .section h2 {
+    padding: 2rem 0;
+  }
+
+  .wrap-logos-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo-brand {
+    width: 200px;
+    padding: 1rem 2rem;
+    filter: grayscale(1);
+  }
+  /** Wrap Title **/
+
+  .wrap-title-section {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 1rem;
+  }
+
+  /** Servicios Section **/
+
+  .wrap-servicios-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .item-servicios-section {
+    padding: 1rem;
+  }
+
+  .item-servicios-section img {
+    width: 300px;
+    height: 225px;
+  }
+
+  /** Two Columns Section **/
+  .two-column-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1e1e1e; /* Color de fondo */
+}
+.two-column-section .wrap-text-column {
+  color: white; /* Color blanco para el texto */
+}
+.wrap-title-section .product-color-black {
+  color: white; /* Cambiar el color del texto a negro */
+}
+
+
+.wrap-title-section {
+    margin-bottom: 2rem;
+}
+
+.wrap-two-colum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.wrap-two-colum > div {
+    flex: 1;
+    padding: 0 1rem;
+}
+
+.wrap-img_two-column img {
+    max-width: 100%;
+    height: auto;
+}
+
+.wrap-text-column .productos-lista .producto-item {
+  list-style-type: disc; /* Tipo de viñetas */
+  margin-bottom: 10px; /* Espacio entre los elementos de la lista */
+}
+
+
+.wrap-text-column li {
+    margin-bottom: 0.5rem; /* Espacio entre cada ítem de la lista */
+}
+
+
+
+  /** Form Section **/
+
+  section.two-column-section.form {
+    background-color: #f2f2f2;
+    padding: 3rem 0;
+  }
+
+  .form input,
+  .form textarea {
+    display: flex;
+    width: 100%;
+    line-height: 1.75rem;
+    border: 1.5px solid #fff;
+    border-radius: var(--border-r);
+  }
+
+  .form textarea {
+    min-height: 200px;
+  }
+
+  input[type="submit"] {
+    border: 0;
+    display: inline;
+    cursor: pointer;
+  }
+  /** Footer **/
+
+  .footer-section {
+    width: 100%; /* Cambiar el ancho del footer al 100% */
+    margin: 0 auto;
+    background-color: #bbb9ae; /* Color de fondo */
+  }
+
+  .wrap-social-logos ul,
+  .wrap-menu-footer-section ul {
+      display: flex;
+      justify-content: center;
+  }
+
+  .social-logo {
+      max-width: 75px;
+      width: 100%;
+      padding: 1rem;
+  }
+  .footer-creds {
+    display: flex;
+    justify-content: center;
+  }
+
+

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>San Antonio Beverage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header id="header" class="header-landing">
+      <div id="header-container" class="header-container">
+        <div class="wrap-logo">
+          <img
+            src="img/logo.png"
+            alt="San Antonio Beverage"
+            class="logo-header"
+          />
+        </div>
+        <div class="menu-header-section">
+          <div class="wrap-menu-header-section">
+            <ul>
+              <li><a href="#inicio">INICIO</a></li>
+              <li><a href="#servicios">SERVICIOS</a></li>
+              <li><a href="#">QUIENES SOMOS</a></li>
+              <li><a href="#productos">PRODUCTOS</a></li>
+              <li><a href="#contactanos">CONTACTO</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="menu-hamburguer">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+    </header>
+<!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+        <div class="wrap-hero-section">
+            <h1>
+                SAN ANTONIO BEVERAGE COMPANY
+            </h1>
+            <p>Se dedica a la destilación, rectificación y mezcla de bebidas espirituosas, con un enfoque especial en la elaboración de cervezas, cocteles, licores de frutas y vinos cítricos. Entre nuestros productos destacan los vinos dulces y secos de Naranja, Toronja roja y Toronja verde, Mandarina, Limón, así como el vino y la crema de Borojó. Nuestro proceso de producción abarca desde la cuidadosa selección de ingredientes de alta calidad hasta la distribución y comercialización de nuestros productos en el mercado.</p>
+            <div class="wrap-cta">
+                <a href="#header-container" class="cta-a">Menú principal</a>
+            </div>
+        </div>
+    </section>
+     <!-- Seccion de logos min 17:38 -->
+     <section class="section logos-section">
+        <div class="wrap-logos-section">
+            <img src="img/1.png" alt="" class="logo-brand">
+            <img src="img/2.png" alt="" class="logo-brand">
+            <img src="img/3.png" alt="" class="logo-brand">
+            <img src="img/4.png" alt="" class="logo-brand">
+            <img src="img/5.png" alt="" class="logo-brand">
+        </div>
+    </section>
+
+    <!-- Servicios que se venden min 19:24 -->
+    <section id="servicios" class="section servicios-section">
+        <div class="wrap-title-section">
+            <h2>Servicios</h2>
+        </div>
+
+        <div class="wrap-servicios-section">
+            <a href="" class="item-servicios-section">
+                <img src="img/6.png" alt="">
+                <p>Item categoría</p>
+                </img>
+            </a>
+
+            <a href="" class="item-servicios-section">
+                <img src="img/7.png" alt="">
+                <p>Item categoría</p>
+                </img>
+            </a>
+
+            <a href="" class="item-servicios-section">
+                <img src="img/8.png" alt="">
+                <p>Item categoría</p>
+                </img>
+            </a>
+
+            <a href="" class="item-servicios-section">
+                <img src="img/9.png" alt="">
+                <p>Item categoría</p>
+                </img>
+            </a>
+        </div>
+    </section>
+<!-- Sección de dos columnas min 22:10 -->
+<section id="productos" class="section two-column-section">
+    <div class="wrap-title-section">
+        <h2 class="product-color-black">PRODUCTOS</h2>
+    </div>
+
+    <div class="wrap-two-colum">
+        <div class="wrap-img_two-column">
+            <img src="img/Vinos.png" alt="">
+        </div>
+        <div class="wrap-img_two-column">
+            <div class="wrap-text-column">
+                <h3>Tipos de producto</h3>
+                <ul class="productos-lista">
+                    <li class="producto-item">Cervezas Artesanales: Nuestro maestro cervecero da rienda suelta a su imaginación, creando nuevos y emocionantes sabores en cada producción.</li>
+                    <li class="producto-item">Cocteles exclusivos: Con base en licores importados, mezclados con nuestros refrescantes vinos cítricos de naranja, toronja y limón.</li>
+                    <li class="producto-item">Línea Pacífica: Incluye nuestra exquisita crema de Borojó y un saludable vino de borojó en dos variantes: con semillas y sin semillas. Además de ofrecer beneficios para la salud, estas opciones están diseñadas para sorprender y satisfacer los sentidos de nuestros clientes.</li>
+                    <li class="producto-item">Productos Destilados: Ofrecemos una selección de licores de frutas y estamos explorando la posibilidad de incluir destilación de licores en el futuro.</li>
+                </ul>
+                <div class="wrap-cta">
+                    <a href="#inicio" class="cta-a">Volver al inicio</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Seccion de formulario de contacto min 24:32 -->
+<section id="contactanos" class="section two-column-section">
+    <div class="wrap-title-section">
+        <h2 class="product-color-black">CONTACTANOS</h2>
+    </div>
+
+    <div class="wrap-two-colum">
+
+        <div class="wrap-img_two-column">
+            <div class="wrap-text-column">
+                <h3>Formulario de contacto</h3>
+                <form action="procesar_formulario.php" method="post" class="form">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" required="">
+                    <br><br>
+
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" name="asunto" id="asunto" required="">
+                    <br><br>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <br>
+                    <textarea name="mensaje" id="mensaje" rows="4" cols="40" required=""></textarea>
+                    <br><br>
+
+                    <input type="submit" value="Enviar" class="cta-a">
+                </form>
+            </div>
+        </div>
+        <div class="wrap-img_two-column">
+            <img src="img/11.png" alt="">
+        </div>
+    </div>
+</section>
+
+<!-- Sección del footer min 28:32 -->
+<footer id="redes" class="footer-section">
+    <div class="wrap-footer-section">
+        <div class="wrap-social-logos">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="img/facebook_100.png" alt="" class="social-logo"> <!--color=#0044A9 logo facebook-->
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/whatsapp_100.png" alt="" class="social-logo"> <!--color=#00C92C logo whatsapp-->
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/youtube_100.png" alt="" class="social-logo"> <!--color=#FD3C4F logo youtube-->
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/instagram_100.png" alt="" class="social-logo">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="menu-footer-section">
+        <div class="footer-creds">
+            <p>©copytight 2024 - ferchocoding.com - Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+  </body>
+</html>
