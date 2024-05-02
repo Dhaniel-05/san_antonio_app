@@ -9,24 +9,18 @@
 
   <body>
     <header id="header" class="header-landing">
-        <div id="header-container" class="header-container">
+        <div id="header-container"class="header-container">
           <div class="wrap-logo">
             <img src="img/logosabc.png" alt="San Antonio Beverage" class="logo-header" />
           </div>
-          <div class="menu-header-section">
-            <div class="menu-option">
-              <a href="#header-container">INICIO</a>
-            </div>
-            <div class="menu-option">
-              <a href="#quienes_somos">QUIENES SOMOS</a>
-            </div>
-            <div class="menu-option">
-              <a href="#productos">PRODUCTOS</a>
-            </div>
-            <div class="menu-option">
-              <a href="#contactanos">CONTACTO</a>
-            </div>
-          </div>
+          <nav class="menu-header-section"> <!-- Utilizando un elemento <nav> para el menú de navegación -->
+            <ul> <!-- Lista no ordenada -->
+              <li><a href="#header-container">INICIO</a></li>
+              <li><a href="#quienes_somos">QUIENES SOMOS</a></li>
+              <li><a href="#productos">PRODUCTOS</a></li>
+              <li><a href="#contactanos">CONTACTO</a></li>
+            </ul>
+          </nav>
           <div class="menu-hamburguer">
             <div class="line"></div>
             <div class="line"></div>
@@ -81,10 +75,6 @@
             </div>
         </div>
     </section>
-
-
-
-
 
 <!-- Sección de dos columnas min 22:10 -->
 <section id="productos" class="section two-column-section">
@@ -156,12 +146,13 @@
         <div class="wrap-social-logos">
             <ul>
                 <li>
-                    <a href="https://www.facebook.com/sabcspirits">
+                    <a target="_blank" href="https://www.facebook.com/sabcspirits">
                         <img src="img/facebook_100.png" alt="" class="social-logo"> <!--color=#0044A9 logo facebook-->
                     </a>
+                    <!-- target="_blank" abre el enlace en otra pestaña-->
                 </li>
                 <li>
-                    <a href="https://wa.me/573102580975">
+                    <a target="_blank" href="https://wa.me/573102580975">
                         <img src="img/whatsapp_100.png" alt="" class="social-logo"> <!--color=#00C92C logo whatsapp-->
                     </a>
                 </li>
@@ -171,7 +162,7 @@
                     </a>
                 </li> -->
                 <li>
-                    <a href="https://www.instagram.com/sabc_spirits/">
+                    <a target="_blank" href="https://www.instagram.com/sabc_spirits/">
                         <img src="img/instagram_100.png" alt="" class="social-logo">
                     </a>
                 </li>
